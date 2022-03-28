@@ -42,9 +42,9 @@ function App() {
     return (
       <div className="login d-grid gap-2">
         <h1>Agenda</h1>
-        <Button size='lg' variant='success' onClick={handleShowLogin}>Login</Button>
+        <Button size='lg' variant='success' onClick={handleShowLogin} className="login-btn">Login</Button>
         {showLogin ? <Login /> : '' }
-        <Button size='lg' onClick={handleShowNewUser}>New User</Button>
+        <Button size='lg' onClick={handleShowNewUser} className="new-user-btn">New User</Button>
         {showNewUser ? <NewUser /> : '' }
       </div>
     )
@@ -58,8 +58,8 @@ function App() {
         </div>
 
         <div className='d-grid gap-2'>
-          <Button size='lg' onClick={handleShowNewTask} variant='success'>New Task</Button>
-          {showNewTask ? <NewTask userId={userId}/> : ''}
+          <Button size='lg' onClick={handleShowNewTask} variant='success' className="new-task-btn">New Task</Button>
+          {showNewTask ? <NewTask userId={userId} /> : ''}
           <Agenda userId={userId}/>
         </div>
       </div>

@@ -33,7 +33,7 @@ const Login = (props) => {
                 <label htmlFor="userName">Username</label>
                 <input type="text" name="userName" />
                 <label htmlFor="password">Password</label>
-                <input type="text" name="password" />
+                <input type="password" name="password" />
                 <Button type="submit">Login</Button>
             </form>
         </div>
